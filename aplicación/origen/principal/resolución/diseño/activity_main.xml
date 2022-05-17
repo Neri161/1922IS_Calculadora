@@ -27,6 +27,8 @@
     android:layout_height="0dp"
      android:layout_margin="5dp" 
     android:text="AC"
+     android:background="#E24A35"
+    android:textColor="#FFF"
     app:layout_constraintBottom_toTopOf="@+id/guideline203"
     app:layout_constraintEnd_toStartOf="@+id/guideline102"
     app:layout_constraintStart_toStartOf="@+id/guideline101"
@@ -38,7 +40,9 @@
     android:layout_width="0dp"
     android:layout_height="0dp"
      android:layout_margin="5dp" 
-    android:text="AC"
+    android:text="+/-"
+    android:background="#E24A35"
+    android:textColor="#FFF"
     app:layout_constraintBottom_toTopOf="@+id/guideline203"
     app:layout_constraintEnd_toStartOf="@+id/guideline103"
     app:layout_constraintStart_toStartOf="@+id/guideline102"
@@ -51,12 +55,224 @@
     android:layout_height="0dp"
      android:layout_margin="5dp" 
     android:text="%"
+    android:background="#E24A35"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+     <Button
+     android:id="@+id/btDivision"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="/"
+    android:background="#FF5757"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt7"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="7"    
+    android:background="#28201E"
+    android:textColor="#FFF"
     app:layout_constraintBottom_toTopOf="@+id/guideline203"
     app:layout_constraintEnd_toStartOf="@+id/guideline104"
     app:layout_constraintStart_toStartOf="@+id/guideline103"
     app:layout_constraintTop_toTopOf="@+id/guideline202"
     />
     
+    <Button
+     android:id="@+id/bt8"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="8"    
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt9"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="/"
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/btMultiplicacion"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="X"
+    android:background="#FF5757"
+    android:textColor="#FFF"   
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt4"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="4"     
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt5"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="5"    
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt6"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="6"  
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/btResta"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="-"    
+    android:background="#FF5757"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt1"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="1"   
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt2"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="2"    
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/bt3"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="3"    
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/btSuma"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="+"    
+    android:background="#FF5757"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+    <Button
+     android:id="@+id/bt0"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="0"    
+    android:background="#28201E"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+    <Button
+     android:id="@+id/btIgual"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+     android:layout_margin="5dp" 
+    android:text="="     
+    android:background="#FF5757"
+    android:textColor="#FFF"
+    app:layout_constraintBottom_toTopOf="@+id/guideline203"
+    app:layout_constraintEnd_toStartOf="@+id/guideline104"
+    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintTop_toTopOf="@+id/guideline202"
+    />
+
+
 <androidx.constraintlayout.widget.Guideline 
 android:id="@+id/guideline101"
 android:layout_width="wrap_content"
