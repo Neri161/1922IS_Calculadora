@@ -16,7 +16,6 @@ public class ConvertirCadena {
         for (int i = 0; i < 8; i++) {
             input = input.replaceAll(operaciones[0][i], operaciones[1][i]);
         }
-
         String[] aux = input.split(" ");
         for (String s : aux) {
             if (!s.equals("")) {
