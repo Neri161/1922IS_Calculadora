@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btnPunto;
     Button btnSuma,btnResta,btnMultiplicacion,btnDivision,btnIgual,btnAC,btnDel;
     TextView resultado;
+    public ConvertirCadena calculadora = new ConvertirCadena();
     public String cadena="";
 
     @Override
