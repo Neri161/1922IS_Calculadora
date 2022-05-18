@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -156,12 +157,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cadena = "";
-                resultado.setText(cadena);
+                resultado.setText("0");
             }
         });
         btnDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try {
+                    if (cadena.equals("") || cadena == null)
+                        resultado.setText("0");
+
+                    cadena = cadena.substring(0,cadena.length()-1);
+                    resultado.setText(cadena);
+                }catch (Exception e){
+                    resultado.setText("0");
+                    Toast toast = Toast.makeText(getApplicationContext(), "7w7", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
 
             }
         });
