@@ -22,27 +22,32 @@ public class ConvertirCadena {
                 validar.add(s);
             }
         }
-        continuar:
-        for (int i = 0; i < validar.size(); i++) {
-            for (int j = 0; j < validar.size(); j++) {
-                if (validar.get(j).equals("Multiplicacion") || validar.get(j).equals("Division")) {
-                    total = realizarOperaciones(validar.get(j - 1), validar.get(j), validar.get(j + 1));
-                    validar.set(j + 1, total + "");
-                    validar.remove(j);
-                    validar.remove(j-1);
-                    continue continuar;
+        try{
+            continuar:
+            for (int i = 0; i < validar.size(); i++) {
+                for (int j = 0; j < validar.size(); j++) {
+                    if (validar.get(j).equals("Multiplicacion") || validar.get(j).equals("Division")) {
+                        total = realizarOperaciones(validar.get(j - 1), validar.get(j), validar.get(j + 1));
+                        validar.set(j + 1, total + "");
+                        validar.remove(j);
+                        validar.remove(j-1);
+                        continue continuar;
+                    }
+                }
+                for (int j = 0; j < validar.size(); j++) {
+                    if (validar.get(j).equals("Suma") || validar.get(j).equals("Resta")) {
+                        total = realizarOperaciones(validar.get(j - 1), validar.get(j), validar.get(j + 1));
+                        validar.set(j + 1, total + "");
+                        validar.remove(j);
+                        validar.remove(j-1);
+                        continue continuar;
+                    }
                 }
             }
-            for (int j = 0; j < validar.size(); j++) {
-                if (validar.get(j).equals("Suma") || validar.get(j).equals("Resta")) {
-                    total = realizarOperaciones(validar.get(j - 1), validar.get(j), validar.get(j + 1));
-                    validar.set(j + 1, total + "");
-                    validar.remove(j);
-                    validar.remove(j-1);
-                    continue continuar;
-                }
-            }
+        }catch (Exception e){
+            operacionValida=false;
         }
+
 
         return total+"";
     }
