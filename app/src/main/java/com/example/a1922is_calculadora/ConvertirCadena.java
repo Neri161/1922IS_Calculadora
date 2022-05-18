@@ -43,8 +43,8 @@ public class ConvertirCadena {
                 }
             }
         }
-        System.out.println("Total: " + total);
-        return "Total: " + total;
+
+        return total+"";
     }
 
     private static double realizarOperaciones(String op1, String operador, String op2) {
