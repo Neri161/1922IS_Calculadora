@@ -151,7 +151,13 @@ public class MainActivity extends AppCompatActivity {
         btnIgual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                    calculadora.validar(cadena);
+                    if(!calculadora.operacionValida){
+                        Toast toast = Toast.makeText(getApplicationContext(), "Error de sintaxis", Toast.LENGTH_SHORT);
+                        toast.show();
+                        return;
+                    }
+                    resultado.setText(calculadora.total+"");
             }
         });
         btnAC.setOnClickListener(new View.OnClickListener() {

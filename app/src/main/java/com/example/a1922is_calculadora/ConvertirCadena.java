@@ -5,11 +5,11 @@ import java.util.*;
 //import java.util.regex.*;
 
 public class ConvertirCadena {
-    private static List<String> validar = new ArrayList<String>();
-    private static double total;
-    public static boolean operacionValida=false;
+    private List<String> validar = new ArrayList<String>();
+    public double total;
+    public boolean operacionValida=false;
 
-    public static String validar(String cadena) {
+    public String validar(String cadena) {
         String[][] operaciones = {{"\\+", "-", "\\*", "/", "\\(", "\\)", "\\[", "]"},
                 {" Suma ", " Resta ", " Multiplicacion ", " Division ", "", "", "", ""}};
         String input = cadena;
@@ -47,7 +47,7 @@ public class ConvertirCadena {
         return total+"";
     }
 
-    private static double realizarOperaciones(String op1, String operador, String op2) {
+    private double realizarOperaciones(String op1, String operador, String op2) {
         try {
         double n1 = Double.parseDouble(op1);
         double n2 = Double.parseDouble(op2);
