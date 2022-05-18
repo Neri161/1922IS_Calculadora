@@ -36,32 +36,20 @@
     />
 
     <Button
-     android:id="@+id/btCambioSigno"
+     android:id="@+id/btQuitar"
     android:layout_width="0dp"
     android:layout_height="0dp"
      android:layout_margin="5dp" 
-    android:text="+/-"
-    android:background="#E24A35"
-    android:textColor="#FFF"
-    app:layout_constraintBottom_toTopOf="@+id/guideline203"
-    app:layout_constraintEnd_toStartOf="@+id/guideline103"
-    app:layout_constraintStart_toStartOf="@+id/guideline102"
-    app:layout_constraintTop_toTopOf="@+id/guideline202"
-    />
-
-    <Button
-     android:id="@+id/btPorcentaje"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-     android:layout_margin="5dp" 
-    android:text="%"
+    android:text="DEL"
     android:background="#E24A35"
     android:textColor="#FFF"
     app:layout_constraintBottom_toTopOf="@+id/guideline203"
     app:layout_constraintEnd_toStartOf="@+id/guideline104"
-    app:layout_constraintStart_toStartOf="@+id/guideline103"
+    app:layout_constraintStart_toStartOf="@+id/guideline102"
     app:layout_constraintTop_toTopOf="@+id/guideline202"
     />
+
+
 
     <Button
         android:id="@+id/btDivision"
@@ -74,7 +62,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btPorcentaje"
+        app:layout_constraintStart_toEndOf="@+id/guideline104"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -90,7 +78,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toBottomOf="@+id/btPorcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/guideline203"
         app:layout_constraintVertical_bias="0.889" />
 
     <Button
@@ -262,7 +250,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:text="+"
+        android:text="."
         android:background="#FF5757"
         android:textColor="#FFF"
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
